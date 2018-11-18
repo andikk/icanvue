@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>I can vue</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+</head>
+<body>
+
+  <main>
+
+    <div id="app">
+      <button v-on:click="increase(2, $event )">Click me</button>
+      <p> {{ counter }}</p>
+
+      <p v-on:mousemove="updateCoordinates">Координаты: {{x }} / {{ y }}</p>
+
+
+    </div>
+
+  </main>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
