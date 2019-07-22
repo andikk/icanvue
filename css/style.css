@@ -1,0 +1,39 @@
+.table {
+  border: 1px solid #6666;
+}
+
+.table__head {
+  background-color: #e2e2e2;
+  color: #6666;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.table__head td {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+.table__input {
+  background-color: #FF9;
+  text-align: center;
+}
+
+.table__input input {
+  background-color: #FF9;
+  font-weight: bold;
+  border: solid 1px #999;
+  text-align: center;
+  width: 80px;
+}
+
+.grey {
+  background-color: #F2F2F2;
+}

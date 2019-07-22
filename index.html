@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <title>I can vue</title>
+  <title>Some calculator</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 
@@ -14,12 +14,63 @@
   <main>
 
     <div id="app">
-      <button v-on:click="increase(2, $event )">Click me</button>
-      <p> {{ counter }}</p>
+      <h1>Some calculator</h1>
+      <table class="table">
+        <tr class="table__head">
+          <td>
+            Value 1 title
+          </td>
+          <td>
+            Value 2 title
+          </td>
+          <td>
+            Value 3 title
+          </td>
+          <td>
+            Result 1 title
+          </td>
+          <td>
+            Result 2 title
+          </td>
+        </tr>
+        <tr>
+          <td class="table__input"><input type="number" v-model="value1"></td>
 
-      <p v-on:mousemove="updateCoordinates">Координаты: {{x }} / {{ y }}</p>
+          <td class="table__input"><input type="number" v-model="value2"></td>
 
-
+          <td class="table__input"><input type="number" v-model="value3"></td>
+          <td>{{ value1 * 1.5 }}</td>
+          <td>{{ value2 * 2 }}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="grey">{{ value3 * 2 }}</td>
+          <td class="grey">{{ value2 * 0.5 }}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>{{ value1 * 2 }}</td>
+          <td>{{ value3 * 2 / 0.1 }}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="grey">{{ value2 * 2.5 }}</td>
+          <td class="grey">{{ value1 * 0.5 }}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>{{ value3 * 3 }}</td>
+          <td>{{ value1 * 2}}</td>
+        </tr>
+      </table>
     </div>
 
   </main>
